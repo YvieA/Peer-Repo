@@ -1,10 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
+
+/* HEADERS */
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
 
-#define UNUSED(x) (void)(x)
+#define UNUSED(y) (void)(y)
 #define BUFF_SIZE 1024
 
 /* FLAG */
@@ -21,8 +23,8 @@
 /**
  * struct fmt - Struct op
  *
- * @fmt: The format.
- * @fn: The function associated.
+ * @fmt: The structure format.
+ * @fn: The associated function.
  */
 struct fmt
 {
@@ -114,4 +116,4 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
-#endif /* MAIN_H */
+#endif
